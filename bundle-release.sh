@@ -9,10 +9,6 @@
 # Get the current directory
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
-# Format all the files
-echo "Formatting the rust files..."
-rustfmt "$DIR"/src/* || exit
-
 # Time to run the build
 echo "Building executable..."
 cargo build --release || exit
