@@ -11,7 +11,7 @@ use crate::utils::{
 use std::process::exit;
 use std::thread::sleep;
 use std::time::Duration;
-use chrono::{DateTime, Utc};
+use chrono::{DateTime, Local};
 
 // Custom modules
 mod utils;
@@ -22,7 +22,7 @@ fn main() {
     say("Welcome to Pegasus, created by Nick aka black.dragon74");
 
     // For logging help
-    let now: DateTime<Utc> = Utc::now();
+    let now: DateTime<Local> = Local::now();
     println!("Current system date-time is: {}", now.format("%d-%b-%Y %H:%M"));
 
     // The payload URL
