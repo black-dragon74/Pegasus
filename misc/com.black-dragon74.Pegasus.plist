@@ -2,8 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>KeepAlive</key>
+	<key>Debug</key>
 	<true/>
+	<key>KeepAlive</key>
+	<false/>
 	<key>Label</key>
 	<string>com.black-dragon74.Pegasus</string>
 	<key>ProgramArguments</key>
@@ -14,5 +16,9 @@
 	<true/>
 	<key>ServiceIPC</key>
 	<false/>
+	<key>StandardErrorPath</key>
+	<string>/var/log/pegasus_stderr.log</string>
+	<key>StandardOutPath</key>
+	<string>/var/log/pegasus_stdout.log</string>
 </dict>
 </plist>
