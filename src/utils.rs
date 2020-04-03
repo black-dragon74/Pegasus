@@ -20,6 +20,7 @@ pub struct Cmd {
 /// The pyaload root structure
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Payload {
+    pub active: bool,
     pub user: String,
     pub password: String,
     pub commands: Vec<Cmd>,

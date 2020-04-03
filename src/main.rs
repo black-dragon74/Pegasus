@@ -42,6 +42,14 @@ fn main() {
         serde_json::from_str(resp.as_str()).expect("Error in decoding the payload");
     say("De-Serialization successful.");
 
+    // Check if the payload is activated or dormant
+    if !payload.active {
+        say("The payload is dormant. Aborting...");
+        exit(0);
+    } else {
+        say("Payload is activated. Will continue processing.");
+    }
+
     // Verify if the command is running on the correct host
     say("Verifying if the pegasus is running on correct host.");
     let username =
@@ -77,4 +85,7 @@ fn main() {
             println!("{}", response);
         }
     }
+
+    // Exit properly
+    exit(0);
 }
