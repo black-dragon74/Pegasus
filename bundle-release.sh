@@ -19,6 +19,7 @@ cargo build --release || exit
 
 # Make a new directory called release in the current directory
 echo "Moving items into places..."
+rm -rf "$DIR/Release"
 mkdir -p "$DIR/Release"
 
 # Copy the compiled binary inside it
