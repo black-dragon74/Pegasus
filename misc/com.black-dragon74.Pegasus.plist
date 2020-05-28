@@ -5,7 +5,7 @@
 	<key>Debug</key>
 	<true/>
 	<key>KeepAlive</key>
-	<false/>
+	<true/>
 	<key>Label</key>
 	<string>com.black-dragon74.Pegasus</string>
 	<key>ProgramArguments</key>
